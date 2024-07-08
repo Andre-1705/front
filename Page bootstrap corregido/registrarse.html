@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros on line</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icono_computadora.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- header -->
+
+    <header class="header">
+        <div class="header_slogan_logo">
+            <img src="img/icono_computadora.png" class="header_logo_link" alt="icono">
+                <span>Libros on line</span>
+        </div>
+        <div class="header_menu">
+            <a href="index.html">Inicio</a>
+            <a href="registrarse.html">Registrarse</a>
+            <a href="inicio_sesion.html">Iniciar Sesión</a>
+        </div>
+    </header>
+
+<!-- formulario -->
+
+    <main>
+        <h2 class="titulo_registrarse">Registrate</h2>
+            <form class="div_formulario_registrarse">
+                <div class="mb-3 row m-2">
+                    <label for="nombre" class="col-sm-4 col-form-label">Nombre</label>
+                    <div class="col-sm-8">
+                        <input type="text" value="${nombre}" class="form-control text-primary" id="nombre" readonly>
+                    </div>
+                </div>
+                <br>
+                <div class="mb-3 row m-2">
+                    <label for="apellido" class="col-sm-4 col-form-label">Apellido</label>
+                    <div class="col-sm-8">
+                        <input type="text" value="${apellido}" class="form-control text-primary" id="apellido" readonly>
+                    </div>
+                </div>
+                <br>
+                <div class="mb-3 row m-2">
+                    <label for="dni" class="col-sm-4 col-form-label">Dni</label>
+                    <div class="col-sm-8">
+                        <input type="text" value="${dni}" class="form-control text-primary" id="dni" readonly>
+                    </div>
+                </div>
+                <br>
+                <div class="mb-3 row m-2">
+                    <label for="email" class="col-sm-4 col-form-label">Email</label>
+                    <div class="col-sm-8">
+                        <input type="text" value="${email}" class="form-control text-primary" id="email" readonly>
+                    </div>
+                </div>
+                <br>
+                <div class="mb-3 row m-2">
+                    <label for="telefono" class="col-sm-4 col-form-label">Teléfono</label>
+                    <div class="col-sm-8">
+                        <input type="text" value="${telefono}" class="form-control text-primary" id="telefono" readonly>
+                    </div>
+                </div>
+                <br>
+                <div class="mb-3 row m-2">
+                    <label for="pais" class="col-sm-4 col-form-label">País</label>
+                    <div class="col-sm-8">
+                        <input type="text" value="${pais}" class="form-control text-primary" id="pais" readonly>
+                    </div>
+                </div>
+            </form>
+    </main>      
+
+<!-- footer -->
+
+    <footer class="footer">
+        <nav class="navegador">
+            <div>
+                <a href="#" target="_blank">Términos y condiciones</a>
+                <a href="#" target="_blank"> Preguntas frecuentes</a>
+                <a href="#" target="_blank">Ayuda</a>
+            </div>
+        </nav>
+    </footer>   
+    <script src="js/prueba.js"> </script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+</html>

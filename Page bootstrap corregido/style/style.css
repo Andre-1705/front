@@ -1,0 +1,320 @@
+/*selector universal*/
+
+* {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/*Variables y Font */
+
+:root {
+    --rojo: #9f3647; 
+    --texto-blanco: #ffffff;
+    /*2em => 2 * 16px = 32px;*/
+    --fondo-negro: #000000;
+    --fondo-gris: #252222;
+}
+
+.ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Header para escritorio */
+
+.header {
+    background-color:var(--rojo) ;
+    padding-top: 1vh;
+    padding-left: 3vw;
+    height: 9vh;
+    min-height: 50px;
+    /*flexbox*/
+    display: flex;
+    justify-content: center; /*main axis*/
+    align-items: center;
+}
+
+.header_slogan_logo {
+    display: flex;
+    justify-content: start;
+    height: 3vh;
+    width: 20vw;
+    color: var(--texto-blanco);
+} 
+ 
+.header_menu {
+    height: 10vh;/*relativo > */
+    /*display: inline-block;*/
+    display: flex;
+    width: 78vw;
+    /*padding-top: 2vh ;*/
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10vw;
+} 
+  
+.header_menu a {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-decoration: none;
+    color: var(--texto-blanco);
+}
+  
+.header_menu a:hover{
+    padding: 1vh;
+    background: black;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.header_logo_link{
+    background-image: url(../img/icono\ computadora.png);
+    margin: 1px 5px;
+    width: 3vh;
+    height: 3vh;
+}
+
+body{
+    background-color: var(--fondo-gris);
+    color: black; 
+     /* scrollbar-width: thin;*/
+}
+
+/* Header para tables y celulares*/
+
+
+/* main para escritorio */
+
+.main {
+    background-image: linear-gradient(to right top, #0000008a, #0000008a), url(../img/banner-bg.jpg);
+    color: white;
+    /*background-attachment: fixed; *//* tph*/
+    height: 90vh; /*vh altura relativa*/
+    width: 98vw; /*vw ancho relativo*/
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_titulo {
+    padding-top: 20vh;
+    padding-bottom: 5vh;
+    font-size: 3rem; 
+}
+  
+.main_subtitulo {
+    margin-bottom: 5vh;
+}
+  
+.main_boton_registrarse {
+    margin-top: 8vh;
+    text-decoration: none;
+    padding: 15px; 
+    background-color: var(--rojo);
+    color: var(--texto-blanco);
+    border-radius: 5px;    
+    width: 20vw;
+    font-size: 1.2rem;
+}
+
+.main_boton_registrarse:hover{
+    font-size: 1.1rem;
+    background-color: black;
+}
+
+/* main para tables y celulares */
+
+
+/* Scroll principal para escritorio */
+
+.busqueda {
+    /*margin: 0 auto*/
+    margin: auto;
+    width: 30%;
+    height: 90vh;
+    color:var(--texto-negro);
+    padding-top: 3vh;
+    font-size: 1.5rem;
+    /*padding: px, px;
+    border: 1px solid red;*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/*fondo formulario es compartido*/
+
+.fondo_formulario h2 {
+    font-weight: 600;
+    color: var(--rojo);
+    margin-bottom: 15vh;
+}
+ 
+.boton_busqueda {
+    margin: 1vh;
+    padding: 1.5vh 3vh;
+    border-radius: 25px;
+    border: 2px solid var(--texto-negro);
+    background-color: var(--rojo);
+    color: var(--texto-blanco);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.input_busqueda {
+    padding: 2vh 3vh;
+    border-radius: 25px;
+    border: 1px solid black;
+    text-transform: capitalize;
+    width: 50vw;
+}
+
+.boton_busqueda:hover {
+    font-size: 1.1rem;
+}
+  
+/* scroll para tables y celulares */
+
+/* Inicio: stock de productos para escritorio */
+
+
+.fondo_inicio{
+    margin: 5vh;
+    padding: 3vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.titulo_inicio{
+    margin-top: 4vh;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white
+}
+
+img{
+    width: 20vh;
+    height: 30vh;
+}
+  
+.salto_linea{
+    background-color: white;
+}
+
+a{
+    margin-top: 2vh;
+    text-decoration: none;
+    color: white;
+}
+
+h4{
+    color: var(--texto-negro);
+    margin: 3vh;
+}
+
+/* inicio: stock de productos para tables y celulares */
+
+
+/* Sección registrarse con bootstrap*/
+
+.div_formulario_registrarse{
+    width: 70vh;
+    height: 15vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 75vh;
+    border-radius: 20px;
+    margin-bottom:40vh;
+    margin-top: 10vh;
+}
+
+.titulo_registrarse{
+    font-size: 2rem;
+    margin-left: 94vh;
+    margin-right: 90vh;
+    color: white;
+    margin-top: 4vh;
+    margin-bottom: 1vh;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 3vh;
+}
+
+/* Sección Inicio_sesion con bootstrap */
+
+.div_formulario_inicio_sesion{
+    width: 70vh;
+    height: 31vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 72vh;
+    border-radius: 20px;
+    margin-bottom: 5vh;
+    margin-top: 13vh;
+}
+
+.titulo_inicio_sesion{
+    margin-left: 88vh;
+    margin-right: 95vh;
+    color: white;
+    margin-top: 20vh;
+    margin-bottom: 1vh;
+    border: 1px solid rgb(25, 22, 22);
+    border-radius: 10px;
+    padding: 3vh;
+}
+
+/* footer para escritorio */
+  
+.footer{
+    background-color: #9f3647;
+    color: white;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navegador{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 4vh;
+}
+
+/* footer para tables y celulares */
